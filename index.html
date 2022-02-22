@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="first-container" id="first-container">
+    <h1  class="name">Asabeneh Yetayeh</h1>
+    <h1 class="power" id="power" >🍃EDUCATOR</h1>
+    <p style="font-size: 18px;">I am Asabeneh Yetayeh.I am instructor,devoloper,motivator,and content creator.I love educating people and creating educational materials.In January 2019,I also created a teaching material <strong>Javascript for everyone.</strong>In december 2019,I created <strong>30 days of PYTHON</strong>challange an in January 2020 <strong>30 days of Javascript</strong></p>
+</div>
+<div class="kareler">
+    <div id="kare" class="kare-1" style="width: 150px; height: 150px; background-color: whitesmoke; display: flex; justify-content: center; align-items: center; text-align: center;">JAVASCRİPT FOR EVERYONE</div>
+    <div id="kare1" class="kare-2" style="width: 150px; height: 150px; background-color: whitesmoke; display: flex; justify-content: center; align-items: center; text-align: center;">30 DAYS OF PTYHON</div>
+    <div id="kare2" class="kare-3" style="width: 150px; height: 150px; background-color: whitesmoke; display: flex; justify-content: center; align-items: center; text-align: center;">30 DAYS OF JAVASCRİPT</div>
+</div>
+<div class="lastText" id="lastText">
+    <p style="padding-top: 1rem;">The technologies I teach</p>
+    <h1 id="getText">REACT</h1>
+</div>
+<script>
+        let power=document.getElementById('power')
+        power.style.backgroundColor='antiquewhite'
+        power.style.display='block'
+        power.style.justifyContent='center'
+    
+    let kare=document.getElementById('kare')
+    let kare1=document.getElementById('kare1')
+    let kare2=document.getElementById('kare2')
+
+    kare.onmousemove=function(){
+        kare.style.backgroundColor='antiquewhite'
+        kare.style.width='200px'
+        kare.style.height='200px'
+    }
+    kare.onmouseout=function(){
+        kare.style.backgroundColor='whitesmoke'
+        kare.style.width='150px'
+        kare.style.height='150px'
+    }
+    kare1.onmousemove=function(){
+        kare1.style.backgroundColor='antiquewhite'
+        kare1.style.width='200px'
+        kare1.style.height='200px'
+    }
+    kare1.onmouseout=function(){
+        kare1.style.backgroundColor='whitesmoke'
+        kare1.style.width='150px'
+        kare1.style.height='150px'
+    }
+    kare2.onmousemove=function(){
+        kare2.style.backgroundColor='antiquewhite'
+        kare2.style.width='200px'
+        kare2.style.height='200px'
+    }
+    kare2.onmouseout=function(){
+        kare2.style.backgroundColor='whitesmoke'
+        kare2.style.width='150px'
+        kare2.style.height='150px'
+    }
+    let punk=document.getElementById('getText')
+
+    const arrow=['REDUX','HTML','PYHTON','NODE','REACT']
+    const colorArr=['red','green','purple','grey','blue']
+
+    let i=0
+    setInterval(function(){
+        if(i==0){
+            punk.innerHTML='REDUX'
+            punk.style.color='red'
+        }else if(i==1){
+            punk.innerHTML='HTML'
+            punk.style.color='green'
+        }else if(i==2){
+            punk.innerHTML='PYHTON'
+            punk.style.color='purple'
+        }else if(i==3){
+            punk.innerHTML='NODE'
+            punk.style.color='grey'
+        }else if(i==4){
+            punk.innerHTML='REACT'
+            punk.style.color='blue'
+        }else{
+            punk.innerHTML=arrow[Math.floor(Math.random()*arrow.length)]
+            punk.style.color=colorArr[Math.floor(Math.random()*colorArr.length)]
+        }
+        i++
+},1400)
+
+let j=0
+
+    const obj=['💻 Programmer','🔥 Motivation','📖 Instructor','🔥 Motivational Speaker','📁 Content Creator']
+
+  setInterval(function(){
+        if(j==0){
+            power.innerHTML='💻 Programmer'
+            power.style.color='grey'
+        }else if(j==1){
+            power.innerHTML='🔥 Motivation'
+            power.style.color='grey'
+        }else if(j==2){
+            power.innerHTML='📖 Instructor'
+            power.style.color='grey'
+        }else if(j==3){
+            power.innerHTML='🔥 Motivational Speaker'
+            power.style.color='grey'
+        }else if(j==4){
+            power.innerHTML='📁 Content Creator'
+            power.style.color='grey'
+        }else{
+            power.innerHTML=obj[Math.floor(Math.random() * obj.length)];
+        }
+        j++
+},1800)
+
+    </script>
+</body>
+</html>
